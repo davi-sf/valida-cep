@@ -1,0 +1,117 @@
+/* Estilos padrão */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(146, 167, 146);
+}
+
+.container h1 {
+    color: #fff;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container p {
+    margin-top: 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.container ol {
+    text-align: left;
+    margin-left: 30px;
+    line-height: 1.4;
+}
+
+.container button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.container button:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+#cep {
+    padding: 5px;
+    font-size: 12px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: 150px;
+}
+
+#cep::placeholder {
+    color: #999;
+}
+
+#tabelaCEP {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.nova-consulta {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nova-consulta button {
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.nova-consulta button:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px; 
+    }
+
+    .container p {
+        margin-top: 10px; 
+        margin-bottom: 5px; 
+    }
+
+    .container button {
+        margin-top: 5px; 
+        padding: 3px 6px; 
+        font-size: 10px; 
+    }
+
+    #cep {
+        padding: 3px; 
+        font-size: 10px; 
+        width: 120px;
+    }
+
+    #tabelaCEP {
+        width: 100%; 
+        font-size: 12px; 
+    }
+}

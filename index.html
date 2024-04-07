@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valida CEP</title>
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Valida CEP</h1>
+        <p>A validação do CEP é o processo de verificar um endereço postal para garantir que o CEP seja válido e
+            corresponda à localização no endereço. Para que um CEP seja considerado válido, ele precisa atender a três
+            condições:</p>
+        <ol>
+            <li>O formato do CEP deve seguir o padrão de 8 dígitos.</li>
+            <li>O CEP indicado no endereço está corretamente associado à cidade ou região indicada no endereço.</li>
+            <li>O CEP corresponde a um CEP válido nos registros dos Correios</li>
+        </ol>    
+        <input type="text" name="pesquisa-cep" id="cep" placeholder="Insira o CEP aqui">
+        <button onclick="consultarCEP()">Localizar</button>
+    </div>
+    <div class="table-container">
+        <table border="1" id="tabelaCEP" >
+            <tr>
+                <th>CEP</th>
+                <th>RUA</th>
+                <th>CIDADE</th>
+                <th>ESTADO</th>
+            </tr>
+        </table>
+    </div>
+
+   <div class="nova-consulta">
+    <button onclick="novaConsulta()">Nova Consulta</button>
+   </div>
+    <div id="resultado"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
